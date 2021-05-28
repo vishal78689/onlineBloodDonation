@@ -1,30 +1,42 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import './slider.css';
+import { Slide } from './Slide';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
+export default function Slider({slides}) {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
-export default function Slider() {
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
     return (
         
-             <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={'./images/slider4.jpg'} className="d-block w-100" alt="..." />
-    </div>
-    <div className="carousel-item">
-      <img src={'./images/slider3.png'} className="d-block w-100" alt="..." />
-    </div>
-    <div className="carousel-item">
-      <img src={'./images/slider2.jpg'} className="d-block w-100" alt="..." />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>s
-  </button>
+             <div className="slider">
+      <ArrowBackIosIcon className='left-arrow' onClick={prevSlide} />
+      <ArrowForwardIosIcon className='right-arrow' onClick={nextSlide} />
+      {Slide.map((slide, index) => {
+        return (
+          <div
+            className={index === current ? 'slide active' : 'slide'}
+            key={index}
+          >
+            {index === current && (
+              <img src={slide.image} alt='travel image' className='image' />
+            )}
+          </div>
+        );
+      })}
+ 
 </div>
        
     )

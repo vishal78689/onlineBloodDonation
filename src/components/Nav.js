@@ -16,7 +16,7 @@ export const Nav = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="hover-line">
-            <Link to="/About">About</Link>
+            <Link to="/Signup">SignUp</Link>
           </li>
           <li className="hover-line">
             <Link to="/register">Register</Link>

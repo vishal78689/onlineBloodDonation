@@ -1,8 +1,13 @@
 .header {
+  width: 100%;
   display: flex;
   padding: 20px;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  background-color: rgb(196, 255, 206);
+  top: 0px;
+  overflow: hidden;
 }
 .header > img {
   height: 80px;
@@ -27,7 +32,7 @@ a:hover {
   color: red;
 }
 .hover-line ::after {
-  content: "";
+  content: '';
   display: block;
   width: 0%;
   height: 2px;

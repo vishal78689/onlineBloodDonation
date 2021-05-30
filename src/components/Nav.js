@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Nav = () => {
   return (
-    <div className="header">
+        <div className="header">
       <img
         src="https://cdn.dribbble.com/users/2620348/screenshots/10495041/shot-cropped-1582915032757.png"
         alt=""
@@ -24,6 +24,9 @@ export const Nav = () => {
         </ul>
       </div>
       </div>
+      
+     
+  
   );
 };
 

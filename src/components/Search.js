@@ -3,11 +3,13 @@ import './Search.css'
 
 function Search() {
     return (
-        <div>
+        <div className="search-t">
           <h2 >Look for donors</h2>  
+          <div className="search-m">
           <form className="search">
-          <select >
-		<option value="0">--Blood Group--</option>
+          <div>
+          <select className="select-s">
+		<option value="0">Blood Group</option>
 		<option value="2">A-</option>
 		<option value="1">A+</option>
 		<option value="6">AB-</option>
@@ -16,23 +18,23 @@ function Search() {
 		<option value="3">B+</option>
 		<option value="8">O-</option>
 		<option value="7">O+</option>
-
 	</select> 
+    </div>
           <div>
               <div className="searcho">
-              <div className="searchButton">Search by Pin </div>
-              <div className="searchButton">Search by District</div>
+              <button type="button" class="btn btn-outline-success">Search by Pin </button>
+              <button type="button" class="btn btn-outline-success">Search by District</button>
               </div>
-              <input placeholder="Enter your Pin" 
+              <input className="inp" placeholder="Enter your Pin" 
           maxLength="6" numbersonly/>
           </div>
           
         
           <div>
-              <button>Search</button>
+              <button className="btn-t">Search</button>
           </div>
           </form>
-            
+            </div>
         </div>
     )
 }

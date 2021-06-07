@@ -1,10 +1,15 @@
 .search-t {
+  margin-top: 0;
   border-bottom: 0.01px solid #b2ff94;
-  height: 44vh;
+  height: 54vh;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  background-color: #ffffff;
+  opacity: 0.6;
 }
 
 .search-t h2 {
-  color: rgb(22, 150, 44);
+  color: rgb(0, 201, 90);
+  padding-top: 20px;
 }
 
 .search-m {
@@ -56,3 +61,12 @@
 .select-text {
   text-align: center;
 } */
+
+.sc {
+  padding: 30px;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-left: 15%;
+  width: 70%;
+  border: 3px solid black;
+}

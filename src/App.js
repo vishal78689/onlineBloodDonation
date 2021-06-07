@@ -7,7 +7,10 @@ import Register from "./components/Register";
 import { Slide } from "./components/Slide";
 import Signup from "./components/Signup";
 import Search from "./components/Search";
-import Fact from "./components/Fact";
+
+
+import Info from "./components/Info";
+
 
 
 function App() {
@@ -21,8 +24,12 @@ function App() {
        <Nav />
       <Slider slides={Slide} />
       <Search/>
-      <Fact/>
-    
+     
+      <Info />
+     
+
+
+      
       
      </Route>
      <Route path="/register">

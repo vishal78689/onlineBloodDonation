@@ -102,6 +102,10 @@ export default function Recipient() {
  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
 </div>
 <div class="mb-3">
+<label for="exampleFormControlInput1" class="form-label">Upload Doctor Prescription</label>
+   <input type="file" class="form-control" aria-label="file example" required />
+ </div>
+<div class="mb-3">
 <label for="exampleFormControlInput1" class="form-label">Upload Patient ID</label>
    <input type="file" class="form-control" aria-label="file example" required />
  </div>

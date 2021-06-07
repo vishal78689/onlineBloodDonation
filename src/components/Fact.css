@@ -4,10 +4,38 @@
 }
 
 .card {
-  padding: 30px;
-  background-color: aliceblue;
+  margin-left: 10%;
+  width: 80%;
+  padding: 20px;
+  background-color: rgb(118, 245, 118);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.973);
 }
 
 .card-title {
-  color: rgb(22, 150, 44);
+  color: rgba(255, 0, 0, 0.808);
+}
+
+.ca {
+  padding: 40px;
+  margin: 10px 20px;
+}
+
+.cd {
+  width: 100%;
+  height: 50vh;
+}
+
+.tl {
+  margin-top: 40px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.tp {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.btnd {
+  margin-top: 80px;
 }

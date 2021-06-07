@@ -35,7 +35,7 @@ export default function Donor() {
   };
 
   return (
-    <div className=".don-w">
+    <div className="">
       <div className="form">
         <img
           className="img"

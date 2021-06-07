@@ -1,40 +1,51 @@
 import React from 'react'
 import './Search.css'
+import useVisiblityToggler from "./useVisiblityToggler";
 
 function Search() {
+
+ const [contactFormComponent, toggleFormVisibility] = useVisiblityToggler(
+  <div className="sc">
+      <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="inputState">Blood Group</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+                <div class="form-group col-md-3">
+            <label for="inputCity">Select Statess</label>
+            <select id="inputCity" class="form-control">
+              <option selected>...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputState">Select District</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputCity">Select Tehsil</label>
+            <select id="inputCity" class="form-control">
+              <option selected>...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        </div>,false);
+
+
+
     return (
         <div className="search-t">
-          <h2 >Look for donors</h2>  
-          <div className="search-m">
-          <form className="search">
-          <div>
-          <select className="select-s">
-		<option value="0">Blood Group</option>
-		<option value="2">A-</option>
-		<option value="1">A+</option>
-		<option value="6">AB-</option>
-		<option value="5">AB+</option>
-		<option value="4">B-</option>
-		<option value="3">B+</option>
-		<option value="8">O-</option>
-		<option value="7">O+</option>
-	</select> 
-    </div>
-          <div>
-              <div className="searcho">
-              <button type="button" class="btn btn-outline-success">Search by Pin </button>
-              <button type="button" class="btn btn-outline-success">Search by District</button>
-              </div>
-              <input className="inp" placeholder="Enter your Pin" 
-          maxLength="6" numbersonly/>
-          </div>
-          
+          <button onClick={toggleFormVisibility} type="button" class="btn btn-outline-success mt-5">Look For Donor</button>
         
-          <div>
-              <button className="btn-t">Search</button>
-          </div>
-          </form>
-            </div>
+        {contactFormComponent}
+    
         </div>
     )
 }

@@ -35,8 +35,8 @@ export default function Donor() {
   };
 
   return (
-    <div className=".don-w">
-      <div className="form">
+    <div className=".don-w " >
+      <div className="form ">
         <img
           className="img"
           src="https://cdn.dribbble.com/users/2620348/screenshots/10495041/shot-cropped-1582915032757.png"
@@ -50,7 +50,7 @@ export default function Donor() {
         </blockquote>
       </figure>
 
-      <div className="container">
+      <div className="container ">
         <form class="row g-3" onSubmit={handleFormSubmit}>
           <div class="col-md-4">
             <label for="validationServer01" class="form-label">

@@ -7,9 +7,10 @@ import Register from "./components/Register";
 import { Slide } from "./components/Slide";
 import Signup from "./components/Signup";
 import Search from "./components/Search";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import Facts from "./components/Facts";
 
-
-import Info from "./components/Info";
 
 
 
@@ -24,8 +25,9 @@ function App() {
        <Nav />
       <Slider slides={Slide} />
       <Search/>
-     
-      <Info />
+      <Cards />
+      <Facts />
+      <Footer />
      
 
 

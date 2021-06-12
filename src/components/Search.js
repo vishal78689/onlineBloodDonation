@@ -36,6 +36,7 @@ function Search() {
             </select>
           </div>
         </div>
+        <button type="button" class="btn btn-success btn-search">Search</button>
         </div>,false);
 
 

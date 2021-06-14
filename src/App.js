@@ -5,9 +5,13 @@ import Slider from './components/Slider';
 import {BrowserRouter as Router , Switch ,Route} from 'react-router-dom'
 import Register from "./components/Register";
 import { Slide } from "./components/Slide";
-import Signup from "./components/Signup";
+
 import Search from "./components/Search";
-import Fact from "./components/Fact";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import Facts from "./components/Facts";
+
+
 
 
 function App() {
@@ -21,8 +25,13 @@ function App() {
        <Nav />
       <Slider slides={Slide} />
       <Search/>
-      <Fact/>
-    
+      <Cards />
+      <Facts />
+      <Footer />
+     
+
+
+      
       
      </Route>
      <Route path="/register">
@@ -30,10 +39,9 @@ function App() {
      
      </Route>
     
-     <Route path="/signup">
-       <Signup/>
      
-     </Route>
+     
+    
   
   
 

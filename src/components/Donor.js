@@ -248,7 +248,7 @@ export default function Donor() {
             </button>
           </div>
         </form>
-        {console.log(values)}
+        
       </div>
       <div class="col-12 alert alert-success" role="alert">
         Thankyou : )

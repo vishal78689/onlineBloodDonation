@@ -1,43 +1,31 @@
-import React ,{useState}from 'react'
-import './slider.css';
-import { Slide } from './Slide';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import React from 'react'
+import "./slider.css";
 
-export default function Slider({slides}) {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
-    return (
-        
-             <div className="slider">
-      <ArrowBackIosIcon className='left-arrow' onClick={prevSlide} />
-      <ArrowForwardIosIcon className='right-arrow' onClick={nextSlide} />
-      {Slide.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <img src={slide.image} alt='travel image' className='image' />
-            )}
-          </div>
-        );
-      })}
- 
+export default function Slider() {
+  return (
+    <div className="con">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid" src="/images/image7.jpg" alt="First slide" />
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="/images/slider2.jpg" alt="Second slide" />
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="/images/image8.jpg" alt="Third slide" />
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-       
-    )
+    </div>
+  )
 }

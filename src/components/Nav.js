@@ -32,10 +32,10 @@ export const Nav = () => {
     <Link class="nav-link active" to="/">Home</Link>
   </li>
   <li class="nav-item">
-    <Link class="nav-link active" href="#">About Us</Link>
+    <Link to="/about-section" class="nav-link active">About Us</Link>
   </li>
   <li class="nav-item">
-    <Link class="nav-link active" href="#">Contact Us</Link>
+    <Link  to="/cont" class="nav-link active">Contact Us</Link>
   </li>
   <li class="nav-item">
     <Link to="/register" class="nav-link active" >Register/Sign in</Link>

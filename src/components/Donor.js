@@ -113,7 +113,7 @@ export default function Donor() {
             </select>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="validationServer04" class="form-label">
               State
             </label>
@@ -139,9 +139,9 @@ export default function Donor() {
               <option>..</option>
             </select>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <label for="validationServer04" class="form-label">
-              Dist
+                City
             </label>
             <select
               class="form-select"
@@ -153,7 +153,7 @@ export default function Donor() {
               required
             >
               <option selected disabled name="dist" value={values.dist}>
-                Select Dist
+                Select City
               </option>
               <option>..</option>
               <option>..</option>
@@ -165,29 +165,7 @@ export default function Donor() {
               <option>..</option>
             </select>
           </div>
-          <div class="col-md-4">
-            <label for="validationServer04" class="form-label">
-              Tehsil
-            </label>
-            <select
-              class="form-select"
-              id="validationServer04"
-              aria-describedby="validationServer04Feedback"
-              required
-            >
-              <option selected disabled value="">
-                Select Tehsil
-              </option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-            </select>
-          </div>
+       
 
           <div class="col-md-6">
             <label for="exampleFormControlInput1" class="form-label">

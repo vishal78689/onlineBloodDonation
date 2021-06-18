@@ -100,7 +100,7 @@ export default function Recipient() {
 
 
 
- <div class="col-md-4">
+ <div class="col-md-6">
    <label for="validationServer04" class="form-label">State</label>
    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" 
      name="state"
@@ -117,27 +117,13 @@ export default function Recipient() {
      <option>..</option>
    </select>
  </div>
- <div class="col-md-4">
-   <label for="validationServer04" class="form-label">Dist</label>
+ <div class="col-md-6">
+   <label for="validationServer04" class="form-label">City</label>
    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback"
      name="dist"
      value={values.dist}
      onChange={handleInput} required>
-     <option selected disabled value="">Select Dist</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-   </select>
- </div>
- <div class="col-md-4">
-   <label for="validationServer04" class="form-label">Tehsil</label>
-   <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-     <option selected disabled value="">Select Teh</option>
+     <option selected disabled value="">Select City</option>
      <option>..</option>
      <option>..</option>
      <option>..</option>

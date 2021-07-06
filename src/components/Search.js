@@ -3,6 +3,7 @@ import './Search.css'
 import useVisiblityToggler from "./useVisiblityToggler";
 
 function Search() {
+  
 
  const [contactFormComponent, toggleFormVisibility] = useVisiblityToggler(
   <div className="sc">

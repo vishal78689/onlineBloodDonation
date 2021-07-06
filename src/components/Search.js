@@ -30,7 +30,7 @@ function Search() {
           </div>
          
         </div>
-        <button type="button" class="btn btn-success btn-search">Search</button>
+        <button type="button" class="btn btn-success btn-search bts">Search</button>
         </div>,false);
 
 

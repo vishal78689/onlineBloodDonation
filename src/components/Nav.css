@@ -18,3 +18,138 @@
   height: 7vh;
   margin-bottom: 5px;
 }
+
+.hamburger {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 990px) {
+}
+
+@media (max-width: 800px) {
+  .nav {
+    height: 10vh;
+    background-color: white;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.973);
+  }
+
+  .navbar-brand > img {
+    width: 70px;
+    height: 5vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .tt {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .hamburger {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav {
+    height: 12vh;
+  }
+
+  .nav-item {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navbar-brand > img {
+    width: 80px;
+    height: 5vh;
+    position: absolute;
+  }
+}
+
+@media (max-width: 411px) {
+  .nav {
+    height: 12vh;
+  }
+
+  .navbar-brand > img {
+    width: 80px;
+    height: 5vh;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 6px;
+  }
+
+  .hamburger {
+    opacity: 1;
+    visibility: visible;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav {
+    height: 14vh;
+  }
+
+  .navbar-brand > img {
+    width: 80px;
+    height: 5vh;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+
+  .hamburger {
+    opacity: 1;
+    visibility: visible;
+    margin-right: 18px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav {
+    height: 15vh;
+  }
+
+  .navbar-brand > img {
+    width: 80px;
+    height: 6vh;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 0px !important;
+  }
+
+  .hamburger {
+    opacity: 1;
+    visibility: visible;
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav {
+    height: 15vh;
+  }
+
+  .navbar-brand > img {
+    width: 80px;
+    height: 6vh;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 5px !important;
+  }
+
+  .hamburger {
+    opacity: 1;
+    visibility: visible;
+    margin-right: 4px;
+  }
+}

@@ -10,7 +10,7 @@ function ContactUs() {
         <div className="cont">
     <div class="contact-section">
       <div class="contact-info">
-        <div><i class="fas fa-map-marker-alt" />Address, City, Country</div>
+        <div><i class="fas fa-map-marker-alt" />Address, Bangalore, India</div>
         <div><i class="fas fa-envelope" />contact@email.com</div>
         <div><i class="fas fa-phone" />+00 0000 000 000</div>
         <div><i class="fas fa-clock" />Mon - Fri 8:00 AM to 5:00 PM</div>

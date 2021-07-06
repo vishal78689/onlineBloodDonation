@@ -1,11 +1,12 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { Link } from "react-router-dom";
 
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Why Should Donate Blood ?? </h1>
+      <h1 className="texttop">Why Should Donate Blood ?? </h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -43,7 +44,8 @@ function Cards() {
             />
           </ul>
         </div>
-        <button type="button" class="btn btn-success btn-search">More</button>
+        <Link to="/about-section" class="nav-link active"><button type="button" class="btn btn-success btn-search btnc">More</button></Link>
+      
       </div>
     </div>
   );

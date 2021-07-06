@@ -116,3 +116,30 @@ h1 {
     margin-bottom: 2rem;
   }
 }
+
+@media (max-width: 360px) {
+  .cards {
+    margin-top: 150px;
+  }
+  .cards__items {
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cards {
+    margin-top: 150px;
+  }
+  .cards__items {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 411px) {
+  .cards {
+    margin-top: 160px;
+  }
+  .cards__items {
+    margin-right: 8px;
+  }
+}

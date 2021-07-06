@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Facts.css";
+import { Link } from "react-router-dom";
 
 export default function Facts() {
     return (
@@ -48,7 +49,7 @@ export default function Facts() {
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-success btn-search">More</button>
+      <Link to="/cont" class="nav-link active"><button type="button" class="btn btn-success btn-search btnc">More</button></Link>
     </div>
 </div>
 

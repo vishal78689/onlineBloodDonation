@@ -24,7 +24,7 @@ function App() {
      
      <Switch>
      <Route  exact path="/">
-       <Nav />
+       <Nav/>
       <Slider slides={Slide} />
       <Search/>
       <Cards />

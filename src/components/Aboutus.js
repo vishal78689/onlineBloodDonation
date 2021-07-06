@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 function Aboutus() {
     return (
-        <>
+        <div className="ttabt">
        <Nav/>
        <div className="abt">
          
@@ -100,7 +100,7 @@ Dedicated to quality, integrity, service, and excellence in everything we do, Me
          
 </div>
 <Footer />
-        </>
+        </div>
     )
 }
 

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Donor.css";
 import {db} from '../firebase'
+import { STATES } from "../States";
+
 
 export default function Donor() {
   const values1 = {
@@ -129,14 +131,10 @@ export default function Donor() {
               <option selected disabled>
                 Select State
               </option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
+              {Object.keys(STATES).map((state) => {
+        return <option key={state}>{state}</option>;
+      })}
+            
             </select>
           </div>
           <div class="col-md-6">
@@ -148,21 +146,17 @@ export default function Donor() {
               id="validationServer04"
               aria-describedby="validationServer04Feedback"
               name="dist"
-              value={values.dist}
+              // value={values.dist}
+
               onChange={handleInput}
               required
             >
-              <option selected disabled name="dist" value={values.dist}>
+              <option selected disabled name="dist" >
                 Select City
               </option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
-              <option>..</option>
+              { values.state && STATES[values.state].map((city) => {
+            return <option key={city}>{city}</option>;
+      })}
             </select>
           </div>
        
@@ -199,15 +193,29 @@ export default function Donor() {
             <label for="exampleFormControlInput1" class="form-label">
               Upload your ID
             </label>
-            <input
+            {/* <input
               type="file"
               class="form-control"
               aria-label="file example"
+              accept="image/png, image/jpeg"
               name="proof"
-              onChange={handleInput}
+               onChange={(e)=>{ Setvalues({
+                ...values,
+                ["proof"]: e.target.files[0]})}}
+              // onChange={handleInput}
               value={values.proof}
               required
-            />
+            /> */}
+            <input
+          type="file"
+          class="form-control"
+       
+          onChange={(e)=>{ Setvalues({
+            ...values,
+            ["proof"]: e.target.files[0]})}}
+            required
+          
+        />
           </div>
           <div class="input-group">
             <span class="input-group-text">Other Message</span>
@@ -221,7 +229,8 @@ export default function Donor() {
           </div>
 
           <div class="col-12">
-            <button class="btn btn-primary" type="submit">
+            <button class="btn btn-primary" type="submit" onClick={() => console.log(values)}
+>
               Submit form
             </button>
           </div>

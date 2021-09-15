@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import "./Recipient.css";
 import {db} from '../firebase'
+import { STATES } from "../States";
 
 export default function Recipient() {
   const values1 = {
@@ -106,15 +107,12 @@ export default function Recipient() {
      name="state"
      value={values.state}
      onChange={handleInput}required>
-     <option selected disabled value="">Select State</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
+     <option selected disabled>
+                Select State
+              </option>
+              {Object.keys(STATES).map((state) => {
+        return <option key={state}>{state}</option>;
+      })}
    </select>
  </div>
  <div class="col-md-6">
@@ -123,15 +121,12 @@ export default function Recipient() {
      name="dist"
      value={values.dist}
      onChange={handleInput} required>
-     <option selected disabled value="">Select City</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
-     <option>..</option>
+   <option selected disabled name="dist" >
+                Select City
+              </option>
+              { values.state && STATES[values.state].map((city) => {
+            return <option key={city}>{city}</option>;
+      })}
    </select>
  </div>
  
